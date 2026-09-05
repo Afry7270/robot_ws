@@ -1,1 +1,1 @@
-# Robot_ws
+# ROS package for the robot
