@@ -1,0 +1,13 @@
+{
+  "tmp_device_ids": [
+    {
+      "expires_at_ms": 1785876554010,
+      "mxid": "18443010F1D57E0E00",
+      "tmp_device_id": "019fc963-451a-788a-81cb-bd3591042e6a"
+    }
+  ],
+  "tmp_host_id": {
+    "expires_at_ms": 1785875757397,
+    "value": "019fc957-1d56-72b8-8016-56712bd6284a"
+  }
+}

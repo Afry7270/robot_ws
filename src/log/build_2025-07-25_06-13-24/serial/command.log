@@ -1,0 +1,2 @@
+Invoking command in '/home/afry/robot_ws/src/build/serial': /usr/bin/cmake /home/afry/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/src/install/serial
+Invoked command in '/home/afry/robot_ws/src/build/serial' returned '1': /usr/bin/cmake /home/afry/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/src/install/serial

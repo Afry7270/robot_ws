@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.001213] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.001568] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.001729] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/afry/robot_ws/src/install/serial')])}
+[0.001822] (serial) JobStarted: {'identifier': 'serial'}
+[0.018520] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.031036] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.034232] (serial) Command: {'cmd': ['/usr/bin/cmake', '/home/afry/robot_ws/src/serial', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/src/install/serial'], 'cwd': '/home/afry/robot_ws/src/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 38996 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_APT_SOURCE_VERSION', '1.1.0'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry/robot_ws/src/diffdrive_arduino'), ('SSH_TTY', '/dev/pts/0'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/src/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 38996 192.168.0.106 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1')]), 'shell': False}
+[0.050795] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.055226] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '/home/afry/robot_ws/src/articubot_one', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/src/install/articubot_one'], 'cwd': '/home/afry/robot_ws/src/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 38996 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('ROS_APT_SOURCE_VERSION', '1.1.0'), ('SHLVL', '1'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry/robot_ws/src/diffdrive_arduino'), ('SSH_TTY', '/dev/pts/0'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/src/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 38996 192.168.0.106 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1')]), 'shell': False}
+[0.097834] (-) TimerEvent: {}
+[0.199111] (-) TimerEvent: {}
+[0.300569] (-) TimerEvent: {}
+[0.401572] (-) TimerEvent: {}
+[0.502779] (-) TimerEvent: {}
+[0.604024] (-) TimerEvent: {}
+[0.704966] (-) TimerEvent: {}
+[0.805764] (-) TimerEvent: {}
+[0.906531] (-) TimerEvent: {}
+[1.007799] (-) TimerEvent: {}
+[1.087396] (articubot_one) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.088431] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.108008] (-) TimerEvent: {}
+[1.209227] (-) TimerEvent: {}
+[1.311387] (-) TimerEvent: {}
+[1.375068] (articubot_one) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.375973] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.407997] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.409901] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.411426] (-) TimerEvent: {}
+[1.512379] (-) TimerEvent: {}
+[1.613300] (-) TimerEvent: {}
+[1.714478] (-) TimerEvent: {}
+[1.773491] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.776610] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.798818] (articubot_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.799767] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.801471] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.801985] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.802682] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.803875] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.813532] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.819201] (-) TimerEvent: {}
+[1.819757] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.919469] (-) TimerEvent: {}
+[2.020971] (-) TimerEvent: {}
+[2.122666] (-) TimerEvent: {}
+[2.224364] (-) TimerEvent: {}
+[2.232771] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.239988] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.258522] (articubot_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.259523] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.261182] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.265166] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.266124] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.267784] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.324528] (-) TimerEvent: {}
+[2.414260] (articubot_one) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:19 (find_package):\n'}
+[2.415133] (articubot_one) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.415638] (articubot_one) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.416173] (articubot_one) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.416652] (articubot_one) StderrLine: {'line': b'\n'}
+[2.417144] (articubot_one) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.417686] (articubot_one) StderrLine: {'line': b'  any of the following names:\n'}
+[2.418428] (articubot_one) StderrLine: {'line': b'\n'}
+[2.419536] (articubot_one) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.420824] (articubot_one) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.424241] (articubot_one) StderrLine: {'line': b'\n'}
+[2.425621] (-) TimerEvent: {}
+[2.428031] (articubot_one) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.429847] (articubot_one) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.431277] (articubot_one) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.432648] (articubot_one) StderrLine: {'line': b'  has been installed.\n'}
+[2.437823] (articubot_one) StderrLine: {'line': b'\n'}
+[2.439890] (articubot_one) StderrLine: {'line': b'\x1b[0m\n'}
+[2.442164] (articubot_one) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.442852] (articubot_one) StdoutLine: {'line': b'See also "/home/afry/robot_ws/src/build/articubot_one/CMakeFiles/CMakeOutput.log".\n'}
+[2.443757] (serial) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:5 (find_package):\n'}
+[2.446734] (serial) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.448296] (serial) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.456477] (serial) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[2.457965] (serial) StderrLine: {'line': b'\n'}
+[2.473887] (serial) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[2.474503] (serial) StderrLine: {'line': b'  any of the following names:\n'}
+[2.474940] (serial) StderrLine: {'line': b'\n'}
+[2.475561] (serial) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[2.476300] (serial) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[2.476961] (serial) StderrLine: {'line': b'\n'}
+[2.477716] (serial) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[2.478317] (serial) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[2.478790] (serial) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[2.479204] (serial) StderrLine: {'line': b'  has been installed.\n'}
+[2.479661] (serial) StderrLine: {'line': b'\n'}
+[2.480141] (serial) StderrLine: {'line': b'\x1b[0m\n'}
+[2.480961] (serial) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.481479] (serial) StdoutLine: {'line': b'See also "/home/afry/robot_ws/src/build/serial/CMakeFiles/CMakeOutput.log".\n'}
+[2.482512] (articubot_one) CommandEnded: {'returncode': 1}
+[2.484021] (serial) CommandEnded: {'returncode': 1}
+[2.528173] (-) TimerEvent: {}
+[2.533325] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 1}
+[2.536614] (serial) JobEnded: {'identifier': 'serial', 'rc': 'SIGINT'}
+[2.547932] (diffdrive_arduino) JobSkipped: {'identifier': 'diffdrive_arduino'}
+[2.548282] (-) EventReactorShutdown: {}

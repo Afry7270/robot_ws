@@ -1,0 +1,82 @@
+[0.063s] Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/afry/robot_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/articubot_one
+[0.363s] -- The C compiler identification is GNU 11.4.0
+[0.658s] -- The CXX compiler identification is GNU 11.4.0
+[0.689s] -- Detecting C compiler ABI info
+[1.072s] -- Detecting C compiler ABI info - done
+[1.099s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.100s] -- Detecting C compile features
+[1.102s] -- Detecting C compile features - done
+[1.116s] -- Detecting CXX compiler ABI info
+[1.513s] -- Detecting CXX compiler ABI info - done
+[1.547s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.563s] -- Detecting CXX compile features
+[1.563s] -- Detecting CXX compile features - done
+[1.592s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.496s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.374s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.830s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.350s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.449s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.468s] -- Added test 'lint_cmake' to check CMake code style
+[4.473s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.528s] -- Added test 'xmllint' to check XML markup files
+[4.538s] -- Configuring done
+[4.582s] -- Generating done
+[4.594s] -- Build files have been written to: /home/afry/robot_ws/build/articubot_one
+[4.620s] Invoked command in '/home/afry/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/afry/robot_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/articubot_one
+[4.631s] Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/afry/robot_ws/build/articubot_one -- -j4 -l4
+[4.796s] Invoked command in '/home/afry/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/afry/robot_ws/build/articubot_one -- -j4 -l4
+[4.839s] Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/afry/robot_ws/build/articubot_one
+[4.866s] -- Install configuration: ""
+[4.868s] -- Execute custom install script
+[4.875s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml
+[4.909s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml
+[4.943s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[4.981s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/empty.yaml
+[5.017s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml
+[5.068s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml
+[5.113s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/joystick.yaml
+[5.148s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/main.rviz
+[5.184s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/map.rviz
+[5.217s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml
+[5.249s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml
+[5.289s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml
+[5.322s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml
+[5.357s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz
+[5.392s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/camera.xacro
+[5.433s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro
+[5.478s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/face.xacro
+[5.532s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[5.634s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[5.743s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/lidar.xacro
+[5.813s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[5.859s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[5.902s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro
+[5.951s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py
+[5.994s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py
+[6.035s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py
+[6.079s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py
+[6.122s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[6.206s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py
+[6.254s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py
+[6.363s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py
+[6.463s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py
+[6.585s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[6.703s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/worlds/empty.world
+[6.764s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world
+[6.811s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[6.908s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[7.008s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[7.120s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[7.235s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/path.sh
+[7.339s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/path.dsv
+[7.471s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.bash
+[7.588s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.sh
+[7.698s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.zsh
+[7.807s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.dsv
+[7.887s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/package.dsv
+[7.973s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[8.030s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[8.081s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[8.134s] -- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/package.xml
+[8.213s] Invoked command in '/home/afry/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/afry/robot_ws/build/articubot_one

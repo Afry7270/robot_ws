@@ -1,0 +1,749 @@
+[0.000000] (-) TimerEvent: {}
+[0.001788] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.002376] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002880] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/afry/robot_ws/install/serial')])}
+[0.003085] (serial) JobStarted: {'identifier': 'serial'}
+[0.046200] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.071969] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.076698] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.079486] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/afry/robot_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/afry/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 41662 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '126'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/afry/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'bn_BD'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 41662 192.168.0.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097674] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.098958] (-) TimerEvent: {}
+[0.199690] (-) TimerEvent: {}
+[0.241091] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[0.242776] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/afry/robot_ws/build/articubot_one', '--', '-j4', '-l4'], 'cwd': '/home/afry/robot_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 41662 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '126'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/afry/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'bn_BD'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 41662 192.168.0.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.299955] (-) TimerEvent: {}
+[0.401351] (-) TimerEvent: {}
+[0.502617] (-) TimerEvent: {}
+[0.625566] (-) TimerEvent: {}
+[0.726887] (-) TimerEvent: {}
+[0.828201] (-) TimerEvent: {}
+[0.930370] (-) TimerEvent: {}
+[1.031714] (-) TimerEvent: {}
+[1.133143] (-) TimerEvent: {}
+[1.234510] (-) TimerEvent: {}
+[1.335754] (-) TimerEvent: {}
+[1.437268] (-) TimerEvent: {}
+[1.538676] (-) TimerEvent: {}
+[1.640073] (-) TimerEvent: {}
+[1.741405] (-) TimerEvent: {}
+[1.842801] (-) TimerEvent: {}
+[1.944003] (-) TimerEvent: {}
+[2.045210] (-) TimerEvent: {}
+[2.146368] (-) TimerEvent: {}
+[2.247329] (-) TimerEvent: {}
+[2.348500] (-) TimerEvent: {}
+[2.449973] (-) TimerEvent: {}
+[2.533323] (articubot_one) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.534211] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.550143] (-) TimerEvent: {}
+[2.651023] (-) TimerEvent: {}
+[2.751776] (-) TimerEvent: {}
+[2.853257] (-) TimerEvent: {}
+[2.954862] (-) TimerEvent: {}
+[3.055575] (-) TimerEvent: {}
+[3.157721] (-) TimerEvent: {}
+[3.227098] (serial) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.227877] (articubot_one) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.257876] (-) TimerEvent: {}
+[3.302834] (articubot_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.307857] (serial) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.14 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[3.345042] (serial) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.358035] (-) TimerEvent: {}
+[3.459018] (-) TimerEvent: {}
+[3.560446] (-) TimerEvent: {}
+[3.661583] (-) TimerEvent: {}
+[3.706888] (articubot_one) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.741566] (serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.761681] (-) TimerEvent: {}
+[3.811252] (articubot_one) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.825004] (articubot_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.833583] (articubot_one) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.845166] (serial) StdoutLine: {'line': b'-- Generating done\n'}
+[3.861857] (-) TimerEvent: {}
+[3.867699] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/afry/robot_ws/build/serial\n'}
+[3.890200] (articubot_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.899101] (articubot_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.935860] (articubot_one) StdoutLine: {'line': b'-- Generating done\n'}
+[3.950846] (articubot_one) StdoutLine: {'line': b'-- Build files have been written to: /home/afry/robot_ws/build/articubot_one\n'}
+[3.962152] (-) TimerEvent: {}
+[3.964939] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[3.979093] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[3.992631] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial\x1b[0m\n'}
+[4.048241] (articubot_one) CommandEnded: {'returncode': 0}
+[4.053054] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[4.062348] (-) TimerEvent: {}
+[4.101279] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/afry/robot_ws/build/articubot_one'], 'cwd': '/home/afry/robot_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 41662 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '126'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/afry/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'bn_BD'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/build/articubot_one'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 41662 192.168.0.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.105777] (serial) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[4.108146] (serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[4.111770] (serial) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[4.119395] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[4.138233] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.141164] (articubot_one) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.145176] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml\n'}
+[4.147249] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml\n'}
+[4.148968] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/depthai_rtabmap.yaml\n'}
+[4.162585] (-) TimerEvent: {}
+[4.181822] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[4.182771] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[4.183856] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[4.184592] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml\n'}
+[4.185368] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/joystick.yaml\n'}
+[4.186213] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/main.rviz\n'}
+[4.187145] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/map.rviz\n'}
+[4.187853] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml\n'}
+[4.188651] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml\n'}
+[4.190148] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml\n'}
+[4.192532] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/rtabmap.yaml\n'}
+[4.228507] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml\n'}
+[4.229807] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[4.231815] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/camera.xacro\n'}
+[4.232654] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro\n'}
+[4.233365] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/face.xacro\n'}
+[4.234400] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[4.235190] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[4.235839] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[4.237007] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[4.237825] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[4.238947] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro\n'}
+[4.241109] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py\n'}
+[4.242116] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py\n'}
+[4.243437] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py\n'}
+[4.245096] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py\n'}
+[4.245691] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[4.246605] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py\n'}
+[4.247238] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/mapping.launch.py\n'}
+[4.262807] (-) TimerEvent: {}
+[4.278579] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py\n'}
+[4.280037] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py\n'}
+[4.280646] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py\n'}
+[4.281296] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[4.284023] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[4.285108] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[4.285801] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[4.287450] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[4.288576] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[4.290985] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[4.291865] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[4.292491] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[4.293567] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[4.294463] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[4.295841] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[4.296822] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[4.297488] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/package.dsv\n'}
+[4.333079] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[4.333937] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[4.335185] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[4.335761] (articubot_one) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/articubot_one/share/articubot_one/package.xml\n'}
+[4.341588] (articubot_one) CommandEnded: {'returncode': 0}
+[4.363188] (-) TimerEvent: {}
+[4.465199] (-) TimerEvent: {}
+[4.560268] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[4.565416] (-) TimerEvent: {}
+[4.667003] (-) TimerEvent: {}
+[4.769129] (-) TimerEvent: {}
+[4.870234] (-) TimerEvent: {}
+[4.971512] (-) TimerEvent: {}
+[5.072805] (-) TimerEvent: {}
+[5.173784] (-) TimerEvent: {}
+[5.274887] (-) TimerEvent: {}
+[5.376668] (-) TimerEvent: {}
+[5.478730] (-) TimerEvent: {}
+[5.580667] (-) TimerEvent: {}
+[5.682394] (-) TimerEvent: {}
+[5.783999] (-) TimerEvent: {}
+[5.885841] (-) TimerEvent: {}
+[5.988315] (-) TimerEvent: {}
+[6.092089] (-) TimerEvent: {}
+[6.194551] (-) TimerEvent: {}
+[6.297618] (-) TimerEvent: {}
+[6.399638] (-) TimerEvent: {}
+[6.500795] (-) TimerEvent: {}
+[6.602001] (-) TimerEvent: {}
+[6.703346] (-) TimerEvent: {}
+[6.804611] (-) TimerEvent: {}
+[6.905868] (-) TimerEvent: {}
+[7.007415] (-) TimerEvent: {}
+[7.109850] (-) TimerEvent: {}
+[7.211621] (-) TimerEvent: {}
+[7.313471] (-) TimerEvent: {}
+[7.415044] (-) TimerEvent: {}
+[7.517163] (-) TimerEvent: {}
+[7.536477] (serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[7.617231] (-) TimerEvent: {}
+[7.718701] (-) TimerEvent: {}
+[7.820249] (-) TimerEvent: {}
+[7.921420] (-) TimerEvent: {}
+[8.022663] (-) TimerEvent: {}
+[8.124128] (-) TimerEvent: {}
+[8.225289] (-) TimerEvent: {}
+[8.327470] (-) TimerEvent: {}
+[8.429864] (-) TimerEvent: {}
+[8.532071] (-) TimerEvent: {}
+[8.634514] (-) TimerEvent: {}
+[8.737472] (-) TimerEvent: {}
+[8.840337] (-) TimerEvent: {}
+[8.943391] (-) TimerEvent: {}
+[9.046469] (-) TimerEvent: {}
+[9.150545] (-) TimerEvent: {}
+[9.253530] (-) TimerEvent: {}
+[9.356119] (-) TimerEvent: {}
+[9.460209] (-) TimerEvent: {}
+[9.563349] (-) TimerEvent: {}
+[9.666548] (-) TimerEvent: {}
+[9.769710] (-) TimerEvent: {}
+[9.873803] (-) TimerEvent: {}
+[9.978037] (-) TimerEvent: {}
+[10.081259] (-) TimerEvent: {}
+[10.184671] (-) TimerEvent: {}
+[10.288816] (-) TimerEvent: {}
+[10.392667] (-) TimerEvent: {}
+[10.494693] (-) TimerEvent: {}
+[10.596740] (-) TimerEvent: {}
+[10.699490] (-) TimerEvent: {}
+[10.802240] (-) TimerEvent: {}
+[10.904705] (-) TimerEvent: {}
+[11.007118] (-) TimerEvent: {}
+[11.109779] (-) TimerEvent: {}
+[11.212832] (-) TimerEvent: {}
+[11.315451] (-) TimerEvent: {}
+[11.419225] (-) TimerEvent: {}
+[11.521361] (-) TimerEvent: {}
+[11.623353] (-) TimerEvent: {}
+[11.725588] (-) TimerEvent: {}
+[11.778584] (serial) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[11.825939] (-) TimerEvent: {}
+[11.928464] (-) TimerEvent: {}
+[12.018412] (serial) StdoutLine: {'line': b'[ 42%] Built target serial\n'}
+[12.028684] (-) TimerEvent: {}
+[12.077814] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_example\x1b[0m\n'}
+[12.128922] (-) TimerEvent: {}
+[12.171929] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o\x1b[0m\n'}
+[12.229251] (-) TimerEvent: {}
+[12.245069] (serial) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[12.329518] (-) TimerEvent: {}
+[12.388330] (serial) StdoutLine: {'line': b'[ 57%] Built target gtest_main\n'}
+[12.429672] (-) TimerEvent: {}
+[12.530670] (-) TimerEvent: {}
+[12.631602] (-) TimerEvent: {}
+[12.732566] (-) TimerEvent: {}
+[12.833590] (-) TimerEvent: {}
+[12.934561] (-) TimerEvent: {}
+[13.035630] (-) TimerEvent: {}
+[13.136621] (-) TimerEvent: {}
+[13.237672] (-) TimerEvent: {}
+[13.338839] (-) TimerEvent: {}
+[13.439981] (-) TimerEvent: {}
+[13.540970] (-) TimerEvent: {}
+[13.641975] (-) TimerEvent: {}
+[13.742848] (-) TimerEvent: {}
+[13.794324] (serial) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable serial_example\x1b[0m\n'}
+[13.843064] (-) TimerEvent: {}
+[13.945033] (-) TimerEvent: {}
+[14.046135] (-) TimerEvent: {}
+[14.147023] (-) TimerEvent: {}
+[14.192684] (serial) StdoutLine: {'line': b'[ 64%] Built target serial_example\n'}
+[14.247224] (-) TimerEvent: {}
+[14.348044] (-) TimerEvent: {}
+[14.448836] (-) TimerEvent: {}
+[14.549607] (-) TimerEvent: {}
+[14.650402] (-) TimerEvent: {}
+[14.751253] (-) TimerEvent: {}
+[14.852121] (-) TimerEvent: {}
+[14.952973] (-) TimerEvent: {}
+[15.053833] (-) TimerEvent: {}
+[15.154660] (-) TimerEvent: {}
+[15.255543] (-) TimerEvent: {}
+[15.356365] (-) TimerEvent: {}
+[15.457370] (-) TimerEvent: {}
+[15.558222] (-) TimerEvent: {}
+[15.659086] (-) TimerEvent: {}
+[15.759877] (-) TimerEvent: {}
+[15.860726] (-) TimerEvent: {}
+[15.961622] (-) TimerEvent: {}
+[16.062400] (-) TimerEvent: {}
+[16.163224] (-) TimerEvent: {}
+[16.264006] (-) TimerEvent: {}
+[16.364849] (-) TimerEvent: {}
+[16.465647] (-) TimerEvent: {}
+[16.566498] (-) TimerEvent: {}
+[16.667271] (-) TimerEvent: {}
+[16.768085] (-) TimerEvent: {}
+[16.868984] (-) TimerEvent: {}
+[16.969824] (-) TimerEvent: {}
+[17.070665] (-) TimerEvent: {}
+[17.171488] (-) TimerEvent: {}
+[17.272495] (-) TimerEvent: {}
+[17.373313] (-) TimerEvent: {}
+[17.474297] (-) TimerEvent: {}
+[17.575114] (-) TimerEvent: {}
+[17.675896] (-) TimerEvent: {}
+[17.776675] (-) TimerEvent: {}
+[17.877519] (-) TimerEvent: {}
+[17.978309] (-) TimerEvent: {}
+[18.079168] (-) TimerEvent: {}
+[18.179968] (-) TimerEvent: {}
+[18.280795] (-) TimerEvent: {}
+[18.381607] (-) TimerEvent: {}
+[18.482490] (-) TimerEvent: {}
+[18.583292] (-) TimerEvent: {}
+[18.684085] (-) TimerEvent: {}
+[18.784853] (-) TimerEvent: {}
+[18.885624] (-) TimerEvent: {}
+[18.986454] (-) TimerEvent: {}
+[19.087276] (-) TimerEvent: {}
+[19.188112] (-) TimerEvent: {}
+[19.288976] (-) TimerEvent: {}
+[19.389776] (-) TimerEvent: {}
+[19.490578] (-) TimerEvent: {}
+[19.591392] (-) TimerEvent: {}
+[19.692233] (-) TimerEvent: {}
+[19.793055] (-) TimerEvent: {}
+[19.893871] (-) TimerEvent: {}
+[19.994677] (-) TimerEvent: {}
+[20.095473] (-) TimerEvent: {}
+[20.196244] (-) TimerEvent: {}
+[20.297114] (-) TimerEvent: {}
+[20.398061] (-) TimerEvent: {}
+[20.498858] (-) TimerEvent: {}
+[20.599626] (-) TimerEvent: {}
+[20.700386] (-) TimerEvent: {}
+[20.801158] (-) TimerEvent: {}
+[20.902077] (-) TimerEvent: {}
+[21.002859] (-) TimerEvent: {}
+[21.103661] (-) TimerEvent: {}
+[21.204452] (-) TimerEvent: {}
+[21.305275] (-) TimerEvent: {}
+[21.406275] (-) TimerEvent: {}
+[21.507608] (serial) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[21.508363] (-) TimerEvent: {}
+[21.609205] (-) TimerEvent: {}
+[21.710133] (-) TimerEvent: {}
+[21.810958] (-) TimerEvent: {}
+[21.812845] (serial) StdoutLine: {'line': b'[ 71%] Built target gtest\n'}
+[21.857200] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial-test-timer\x1b[0m\n'}
+[21.857928] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial-test\x1b[0m\n'}
+[21.911166] (-) TimerEvent: {}
+[21.924398] (serial) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\x1b[0m\n'}
+[21.959684] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\x1b[0m\n'}
+[22.011598] (-) TimerEvent: {}
+[22.112928] (-) TimerEvent: {}
+[22.214321] (-) TimerEvent: {}
+[22.315734] (-) TimerEvent: {}
+[22.417266] (-) TimerEvent: {}
+[22.518768] (-) TimerEvent: {}
+[22.620530] (-) TimerEvent: {}
+[22.722263] (-) TimerEvent: {}
+[22.823831] (-) TimerEvent: {}
+[22.925652] (-) TimerEvent: {}
+[23.027275] (-) TimerEvent: {}
+[23.129161] (-) TimerEvent: {}
+[23.231011] (-) TimerEvent: {}
+[23.332543] (-) TimerEvent: {}
+[23.434236] (-) TimerEvent: {}
+[23.535803] (-) TimerEvent: {}
+[23.637655] (-) TimerEvent: {}
+[23.739526] (-) TimerEvent: {}
+[23.841960] (-) TimerEvent: {}
+[23.943879] (-) TimerEvent: {}
+[24.045513] (-) TimerEvent: {}
+[24.147517] (-) TimerEvent: {}
+[24.249132] (-) TimerEvent: {}
+[24.350795] (-) TimerEvent: {}
+[24.452442] (-) TimerEvent: {}
+[24.554838] (-) TimerEvent: {}
+[24.657792] (-) TimerEvent: {}
+[24.761196] (-) TimerEvent: {}
+[24.864711] (-) TimerEvent: {}
+[24.968197] (-) TimerEvent: {}
+[25.071583] (-) TimerEvent: {}
+[25.174904] (-) TimerEvent: {}
+[25.278004] (-) TimerEvent: {}
+[25.382308] (-) TimerEvent: {}
+[25.486232] (-) TimerEvent: {}
+[25.588807] (-) TimerEvent: {}
+[25.692788] (-) TimerEvent: {}
+[25.795464] (-) TimerEvent: {}
+[25.898075] (-) TimerEvent: {}
+[26.000710] (-) TimerEvent: {}
+[26.102713] (-) TimerEvent: {}
+[26.204525] (-) TimerEvent: {}
+[26.306874] (-) TimerEvent: {}
+[26.408174] (-) TimerEvent: {}
+[26.509797] (-) TimerEvent: {}
+[26.611915] (-) TimerEvent: {}
+[26.713206] (-) TimerEvent: {}
+[26.814528] (-) TimerEvent: {}
+[26.915824] (-) TimerEvent: {}
+[27.017000] (-) TimerEvent: {}
+[27.118115] (-) TimerEvent: {}
+[27.219070] (-) TimerEvent: {}
+[27.320009] (-) TimerEvent: {}
+[27.421145] (-) TimerEvent: {}
+[27.522490] (-) TimerEvent: {}
+[27.623611] (-) TimerEvent: {}
+[27.705928] (serial) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/bind.hpp:30\x1b[m\x1b[K,\n'}
+[27.706923] (serial) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/afry/robot_ws/src/serial/tests/unix_serial_tests.cc:23\x1b[m\x1b[K:\n'}
+[27.707668] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[27.708346] (serial) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[27.709017] (serial) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[27.723831] (-) TimerEvent: {}
+[27.825270] (-) TimerEvent: {}
+[27.925108] (serial) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable serial-test-timer\x1b[0m\n'}
+[27.926373] (-) TimerEvent: {}
+[28.028029] (-) TimerEvent: {}
+[28.129639] (-) TimerEvent: {}
+[28.231196] (-) TimerEvent: {}
+[28.332273] (-) TimerEvent: {}
+[28.433540] (-) TimerEvent: {}
+[28.512464] (serial) StdoutLine: {'line': b'[ 92%] Built target serial-test-timer\n'}
+[28.533739] (-) TimerEvent: {}
+[28.634662] (-) TimerEvent: {}
+[28.685630] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial-test\x1b[0m\n'}
+[28.734845] (-) TimerEvent: {}
+[28.835602] (-) TimerEvent: {}
+[28.936546] (-) TimerEvent: {}
+[29.037513] (-) TimerEvent: {}
+[29.138255] (-) TimerEvent: {}
+[29.238924] (-) TimerEvent: {}
+[29.246801] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[29.288861] (serial) CommandEnded: {'returncode': 0}
+[29.291515] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[29.292340] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/afry/robot_ws/build/serial'], 'cwd': '/home/afry/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 41662 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '126'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/afry/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'bn_BD'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/build/serial'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 41662 192.168.0.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[29.325734] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.327427] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.328871] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/lib/libserial.a\n'}
+[29.329803] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/include/serial/serial.h\n'}
+[29.330517] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/include/serial/v8stdint.h\n'}
+[29.331580] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[29.332450] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[29.333581] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[29.334658] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[29.335614] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[29.336539] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[29.337488] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/environment/path.sh\n'}
+[29.338532] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/environment/path.dsv\n'}
+[29.338982] (-) TimerEvent: {}
+[29.339447] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/local_setup.bash\n'}
+[29.340379] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/local_setup.sh\n'}
+[29.341286] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/local_setup.zsh\n'}
+[29.342188] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/local_setup.dsv\n'}
+[29.342773] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/package.dsv\n'}
+[29.376206] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[29.377232] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.378210] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[29.379113] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[29.379881] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[29.380703] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/serial/share/serial/package.xml\n'}
+[29.387560] (serial) CommandEnded: {'returncode': 0}
+[29.439230] (-) TimerEvent: {}
+[29.455894] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[29.460745] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[29.495380] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[29.502138] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[29.503704] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/afry/robot_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/afry/robot_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 41662 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/afry/robot_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '126'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/afry/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/afry/robot_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'bn_BD'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 41662 192.168.0.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/afry/robot_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[29.539428] (-) TimerEvent: {}
+[29.612068] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[29.639745] (-) TimerEvent: {}
+[29.740529] (-) TimerEvent: {}
+[29.841318] (-) TimerEvent: {}
+[29.942098] (-) TimerEvent: {}
+[30.043136] (-) TimerEvent: {}
+[30.144144] (-) TimerEvent: {}
+[30.157362] (diffdrive_arduino) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[30.192958] (diffdrive_arduino) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/afry/robot_ws/install/serial/share/serial/cmake)\n'}
+[30.200065] (diffdrive_arduino) StdoutLine: {'line': b'-- Found hardware_interface: 2.54.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[30.244306] (-) TimerEvent: {}
+[30.345167] (-) TimerEvent: {}
+[30.445966] (-) TimerEvent: {}
+[30.546878] (-) TimerEvent: {}
+[30.571726] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[30.588492] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[30.628515] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[30.647028] (-) TimerEvent: {}
+[30.685959] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[30.747218] (-) TimerEvent: {}
+[30.756306] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[30.847410] (-) TimerEvent: {}
+[30.948283] (-) TimerEvent: {}
+[31.049071] (-) TimerEvent: {}
+[31.149860] (-) TimerEvent: {}
+[31.250669] (-) TimerEvent: {}
+[31.351377] (-) TimerEvent: {}
+[31.452148] (-) TimerEvent: {}
+[31.552896] (-) TimerEvent: {}
+[31.653602] (-) TimerEvent: {}
+[31.754312] (-) TimerEvent: {}
+[31.845551] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[31.854483] (-) TimerEvent: {}
+[31.857210] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[31.954671] (-) TimerEvent: {}
+[31.976285] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[32.020923] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[32.054841] (-) TimerEvent: {}
+[32.111716] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[32.143985] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[32.155000] (-) TimerEvent: {}
+[32.180454] (diffdrive_arduino) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[32.255200] (-) TimerEvent: {}
+[32.355946] (-) TimerEvent: {}
+[32.430739] (diffdrive_arduino) StdoutLine: {'line': b'-- Found controller_manager: 2.54.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[32.456137] (-) TimerEvent: {}
+[32.556890] (-) TimerEvent: {}
+[32.657658] (-) TimerEvent: {}
+[32.758378] (-) TimerEvent: {}
+[32.859184] (-) TimerEvent: {}
+[32.922204] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring done\n'}
+[32.959365] (-) TimerEvent: {}
+[33.038655] (diffdrive_arduino) StdoutLine: {'line': b'-- Generating done\n'}
+[33.059593] (-) TimerEvent: {}
+[33.070232] (diffdrive_arduino) StdoutLine: {'line': b'-- Build files have been written to: /home/afry/robot_ws/build/diffdrive_arduino\n'}
+[33.159875] (-) TimerEvent: {}
+[33.189011] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target fake_robot\x1b[0m\n'}
+[33.191011] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target diffdrive_arduino\x1b[0m\n'}
+[33.260084] (-) TimerEvent: {}
+[33.357960] (diffdrive_arduino) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o\x1b[0m\n'}
+[33.358814] (diffdrive_arduino) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o\x1b[0m\n'}
+[33.365707] (-) TimerEvent: {}
+[33.367993] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[33.378488] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[33.465908] (-) TimerEvent: {}
+[33.567198] (-) TimerEvent: {}
+[33.668560] (-) TimerEvent: {}
+[33.769963] (-) TimerEvent: {}
+[33.871330] (-) TimerEvent: {}
+[33.973390] (-) TimerEvent: {}
+[34.074881] (-) TimerEvent: {}
+[34.176104] (-) TimerEvent: {}
+[34.277371] (-) TimerEvent: {}
+[34.378851] (-) TimerEvent: {}
+[34.480351] (-) TimerEvent: {}
+[34.581740] (-) TimerEvent: {}
+[34.683167] (-) TimerEvent: {}
+[34.784612] (-) TimerEvent: {}
+[34.886063] (-) TimerEvent: {}
+[34.986946] (-) TimerEvent: {}
+[35.087915] (-) TimerEvent: {}
+[35.188755] (-) TimerEvent: {}
+[35.289638] (-) TimerEvent: {}
+[35.305365] (diffdrive_arduino) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o\x1b[0m\n'}
+[35.389820] (-) TimerEvent: {}
+[35.490850] (-) TimerEvent: {}
+[35.592559] (-) TimerEvent: {}
+[35.693528] (-) TimerEvent: {}
+[35.794339] (-) TimerEvent: {}
+[35.895195] (-) TimerEvent: {}
+[35.995916] (-) TimerEvent: {}
+[36.097326] (-) TimerEvent: {}
+[36.198966] (-) TimerEvent: {}
+[36.300116] (-) TimerEvent: {}
+[36.401255] (-) TimerEvent: {}
+[36.502480] (-) TimerEvent: {}
+[36.604473] (-) TimerEvent: {}
+[36.706669] (-) TimerEvent: {}
+[36.808632] (-) TimerEvent: {}
+[36.910654] (-) TimerEvent: {}
+[37.012529] (-) TimerEvent: {}
+[37.114778] (-) TimerEvent: {}
+[37.216742] (-) TimerEvent: {}
+[37.318479] (-) TimerEvent: {}
+[37.420193] (-) TimerEvent: {}
+[37.521906] (-) TimerEvent: {}
+[37.623841] (-) TimerEvent: {}
+[37.725572] (-) TimerEvent: {}
+[37.827377] (-) TimerEvent: {}
+[37.929120] (-) TimerEvent: {}
+[38.030742] (-) TimerEvent: {}
+[38.132490] (-) TimerEvent: {}
+[38.234662] (-) TimerEvent: {}
+[38.336615] (-) TimerEvent: {}
+[38.438812] (-) TimerEvent: {}
+[38.541033] (-) TimerEvent: {}
+[38.643621] (-) TimerEvent: {}
+[38.746370] (-) TimerEvent: {}
+[38.848571] (-) TimerEvent: {}
+[38.950879] (-) TimerEvent: {}
+[39.053099] (-) TimerEvent: {}
+[39.156391] (-) TimerEvent: {}
+[39.259547] (-) TimerEvent: {}
+[39.361502] (-) TimerEvent: {}
+[39.463710] (-) TimerEvent: {}
+[39.565677] (-) TimerEvent: {}
+[39.667648] (-) TimerEvent: {}
+[39.769659] (-) TimerEvent: {}
+[39.871432] (-) TimerEvent: {}
+[39.973299] (-) TimerEvent: {}
+[40.075139] (-) TimerEvent: {}
+[40.177080] (-) TimerEvent: {}
+[40.278705] (-) TimerEvent: {}
+[40.380356] (-) TimerEvent: {}
+[40.482462] (-) TimerEvent: {}
+[40.584680] (-) TimerEvent: {}
+[40.687043] (-) TimerEvent: {}
+[40.789691] (-) TimerEvent: {}
+[40.892136] (-) TimerEvent: {}
+[40.994777] (-) TimerEvent: {}
+[41.097217] (-) TimerEvent: {}
+[41.199830] (-) TimerEvent: {}
+[41.301341] (-) TimerEvent: {}
+[41.403044] (-) TimerEvent: {}
+[41.504588] (-) TimerEvent: {}
+[41.605962] (-) TimerEvent: {}
+[41.707404] (-) TimerEvent: {}
+[41.808940] (-) TimerEvent: {}
+[41.910447] (-) TimerEvent: {}
+[42.011935] (-) TimerEvent: {}
+[42.113294] (-) TimerEvent: {}
+[42.214786] (-) TimerEvent: {}
+[42.316243] (-) TimerEvent: {}
+[42.417668] (-) TimerEvent: {}
+[42.519014] (-) TimerEvent: {}
+[42.620380] (-) TimerEvent: {}
+[42.721913] (-) TimerEvent: {}
+[42.823352] (-) TimerEvent: {}
+[42.924673] (-) TimerEvent: {}
+[43.026021] (-) TimerEvent: {}
+[43.127551] (-) TimerEvent: {}
+[43.229295] (-) TimerEvent: {}
+[43.330776] (-) TimerEvent: {}
+[43.432253] (-) TimerEvent: {}
+[43.533864] (-) TimerEvent: {}
+[43.635332] (-) TimerEvent: {}
+[43.736845] (-) TimerEvent: {}
+[43.838413] (-) TimerEvent: {}
+[43.939955] (-) TimerEvent: {}
+[44.041377] (-) TimerEvent: {}
+[44.142894] (-) TimerEvent: {}
+[44.243925] (-) TimerEvent: {}
+[44.344887] (-) TimerEvent: {}
+[44.445853] (-) TimerEvent: {}
+[44.546863] (-) TimerEvent: {}
+[44.647867] (-) TimerEvent: {}
+[44.748911] (-) TimerEvent: {}
+[44.850091] (-) TimerEvent: {}
+[44.951152] (-) TimerEvent: {}
+[45.052248] (-) TimerEvent: {}
+[45.153388] (-) TimerEvent: {}
+[45.254474] (-) TimerEvent: {}
+[45.355451] (-) TimerEvent: {}
+[45.458207] (-) TimerEvent: {}
+[45.559230] (-) TimerEvent: {}
+[45.660287] (-) TimerEvent: {}
+[45.761527] (-) TimerEvent: {}
+[45.862702] (-) TimerEvent: {}
+[45.963867] (-) TimerEvent: {}
+[46.065063] (-) TimerEvent: {}
+[46.166033] (-) TimerEvent: {}
+[46.267023] (-) TimerEvent: {}
+[46.369769] (-) TimerEvent: {}
+[46.472415] (-) TimerEvent: {}
+[46.574867] (-) TimerEvent: {}
+[46.677312] (-) TimerEvent: {}
+[46.779912] (-) TimerEvent: {}
+[46.882357] (-) TimerEvent: {}
+[46.984919] (-) TimerEvent: {}
+[47.087452] (-) TimerEvent: {}
+[47.189965] (-) TimerEvent: {}
+[47.292536] (-) TimerEvent: {}
+[47.395156] (-) TimerEvent: {}
+[47.497972] (-) TimerEvent: {}
+[47.600083] (-) TimerEvent: {}
+[47.702553] (-) TimerEvent: {}
+[47.804912] (-) TimerEvent: {}
+[47.907271] (-) TimerEvent: {}
+[48.009646] (-) TimerEvent: {}
+[48.112003] (-) TimerEvent: {}
+[48.214495] (-) TimerEvent: {}
+[48.316596] (-) TimerEvent: {}
+[48.418751] (-) TimerEvent: {}
+[48.520771] (-) TimerEvent: {}
+[48.623406] (-) TimerEvent: {}
+[48.724734] (-) TimerEvent: {}
+[48.826096] (-) TimerEvent: {}
+[48.927542] (-) TimerEvent: {}
+[49.029005] (-) TimerEvent: {}
+[49.130449] (-) TimerEvent: {}
+[49.231504] (-) TimerEvent: {}
+[49.332633] (-) TimerEvent: {}
+[49.433662] (-) TimerEvent: {}
+[49.534840] (-) TimerEvent: {}
+[49.635876] (-) TimerEvent: {}
+[49.737451] (-) TimerEvent: {}
+[49.839081] (-) TimerEvent: {}
+[49.940427] (-) TimerEvent: {}
+[50.041571] (-) TimerEvent: {}
+[50.142628] (-) TimerEvent: {}
+[50.243682] (-) TimerEvent: {}
+[50.344720] (-) TimerEvent: {}
+[50.445677] (-) TimerEvent: {}
+[50.546605] (-) TimerEvent: {}
+[50.647580] (-) TimerEvent: {}
+[50.749054] (-) TimerEvent: {}
+[50.850788] (-) TimerEvent: {}
+[50.952836] (-) TimerEvent: {}
+[51.053973] (-) TimerEvent: {}
+[51.154921] (-) TimerEvent: {}
+[51.255852] (-) TimerEvent: {}
+[51.356820] (-) TimerEvent: {}
+[51.457797] (-) TimerEvent: {}
+[51.558742] (-) TimerEvent: {}
+[51.659743] (-) TimerEvent: {}
+[51.760809] (-) TimerEvent: {}
+[51.861855] (-) TimerEvent: {}
+[51.963045] (-) TimerEvent: {}
+[52.064238] (-) TimerEvent: {}
+[52.091469] (diffdrive_arduino) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libfake_robot.so\x1b[0m\n'}
+[52.164536] (-) TimerEvent: {}
+[52.265656] (-) TimerEvent: {}
+[52.359810] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[52.365906] (-) TimerEvent: {}
+[52.467247] (-) TimerEvent: {}
+[52.569411] (-) TimerEvent: {}
+[52.670957] (-) TimerEvent: {}
+[52.772509] (-) TimerEvent: {}
+[52.873968] (-) TimerEvent: {}
+[52.975398] (-) TimerEvent: {}
+[53.076595] (-) TimerEvent: {}
+[53.177995] (-) TimerEvent: {}
+[53.185054] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[53.278206] (-) TimerEvent: {}
+[53.379093] (-) TimerEvent: {}
+[53.395575] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[53.436073] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[53.438444] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[53.439469] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/afry/robot_ws/build/diffdrive_arduino'], 'cwd': '/home/afry/robot_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('SSH_CLIENT', '192.168.0.109 41662 22'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/afry/robot_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'bn_BD'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '126'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/afry/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'bn_BD'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'bn_BD'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/afry/robot_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_MEASUREMENT', 'bn_BD'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('LC_IDENTIFICATION', 'bn_BD'), ('PWD', '/home/afry/robot_ws/build/diffdrive_arduino'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.109 41662 192.168.0.102 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/afry/robot_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[53.474452] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[53.476173] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[53.477595] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml\n'}
+[53.478664] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml\n'}
+[53.479160] (-) TimerEvent: {}
+[53.480218] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[53.481049] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/lib/libfake_robot.so\n'}
+[53.482856] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[53.484138] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py\n'}
+[53.485125] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py\n'}
+[53.486282] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[53.487229] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[53.488414] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[53.489581] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[53.490619] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[53.491618] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[53.492570] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[53.493553] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[53.494489] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[53.495377] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[53.496265] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[53.497147] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[53.497826] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[53.530966] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[53.532037] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[53.533039] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[53.534140] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[53.535080] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[53.535860] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[53.536726] (diffdrive_arduino) StdoutLine: {'line': b'-- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[53.543779] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[53.579323] (-) TimerEvent: {}
+[53.680410] (-) TimerEvent: {}
+[53.769541] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[53.772645] (-) EventReactorShutdown: {}

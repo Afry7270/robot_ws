@@ -1,0 +1,589 @@
+[0.000000] (-) TimerEvent: {}
+[0.001659] (articubot_one) JobQueued: {'identifier': 'articubot_one', 'dependencies': OrderedDict()}
+[0.001793] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.001874] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/afry/robot_ws/install/serial')])}
+[0.001961] (serial) JobStarted: {'identifier': 'serial'}
+[0.031670] (articubot_one) JobStarted: {'identifier': 'articubot_one'}
+[0.054872] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.057358] (serial) Command: {'cmd': ['/usr/bin/cmake', '/home/afry/robot_ws/src/serial', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/serial'], 'cwd': '/home/afry/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.079685] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'cmake'}
+[0.088528] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '/home/afry/robot_ws/src/articubot_one', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/articubot_one'], 'cwd': '/home/afry/robot_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/articubot_one'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099022] (-) TimerEvent: {}
+[0.200053] (-) TimerEvent: {}
+[0.301102] (-) TimerEvent: {}
+[0.379352] (serial) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.394419] (articubot_one) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.401315] (-) TimerEvent: {}
+[0.502346] (-) TimerEvent: {}
+[0.603275] (-) TimerEvent: {}
+[0.676740] (serial) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.689566] (articubot_one) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.703456] (-) TimerEvent: {}
+[0.707511] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.720137] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.803723] (-) TimerEvent: {}
+[0.904856] (-) TimerEvent: {}
+[1.005977] (-) TimerEvent: {}
+[1.079632] (serial) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.103463] (articubot_one) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.106154] (-) TimerEvent: {}
+[1.107069] (serial) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.108116] (serial) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.109563] (serial) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.121624] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.130741] (articubot_one) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.131615] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.133317] (articubot_one) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.147334] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.206416] (-) TimerEvent: {}
+[1.307489] (-) TimerEvent: {}
+[1.408435] (-) TimerEvent: {}
+[1.507803] (serial) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.508621] (-) TimerEvent: {}
+[1.539389] (serial) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.540307] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.542127] (serial) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.543722] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.569726] (serial) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.578599] (articubot_one) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.594343] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.594870] (articubot_one) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.612007] (-) TimerEvent: {}
+[1.622604] (articubot_one) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.712277] (-) TimerEvent: {}
+[1.813649] (-) TimerEvent: {}
+[1.914815] (-) TimerEvent: {}
+[2.016079] (-) TimerEvent: {}
+[2.117183] (-) TimerEvent: {}
+[2.218582] (-) TimerEvent: {}
+[2.321025] (-) TimerEvent: {}
+[2.423251] (-) TimerEvent: {}
+[2.466957] (serial) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.523652] (-) TimerEvent: {}
+[2.526791] (articubot_one) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.623860] (-) TimerEvent: {}
+[2.750713] (-) TimerEvent: {}
+[2.852152] (-) TimerEvent: {}
+[2.953034] (-) TimerEvent: {}
+[3.054351] (-) TimerEvent: {}
+[3.155742] (-) TimerEvent: {}
+[3.257353] (-) TimerEvent: {}
+[3.359099] (-) TimerEvent: {}
+[3.405265] (articubot_one) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.411050] (serial) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.459132] (-) TimerEvent: {}
+[3.559939] (-) TimerEvent: {}
+[3.660861] (-) TimerEvent: {}
+[3.762312] (-) TimerEvent: {}
+[3.861366] (articubot_one) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.862374] (-) TimerEvent: {}
+[3.865625] (serial) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[3.947931] (serial) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  \n'}
+[3.962583] (-) TimerEvent: {}
+[3.971196] (serial) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.980317] (serial) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.063102] (-) TimerEvent: {}
+[4.164265] (-) TimerEvent: {}
+[4.265893] (-) TimerEvent: {}
+[4.359902] (serial) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.360968] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.366105] (-) TimerEvent: {}
+[4.381685] (articubot_one) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.466337] (-) TimerEvent: {}
+[4.480301] (articubot_one) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.498360] (articubot_one) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.504243] (articubot_one) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.559097] (articubot_one) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.566570] (-) TimerEvent: {}
+[4.569249] (articubot_one) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.613433] (articubot_one) StdoutLine: {'line': b'-- Generating done\n'}
+[4.625033] (articubot_one) StdoutLine: {'line': b'-- Build files have been written to: /home/afry/robot_ws/build/articubot_one\n'}
+[4.651145] (articubot_one) CommandEnded: {'returncode': 0}
+[4.653232] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'build'}
+[4.656118] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/afry/robot_ws/build/articubot_one', '--', '-j4', '-l4'], 'cwd': '/home/afry/robot_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/articubot_one'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.666954] (-) TimerEvent: {}
+[4.750248] (serial) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.753822] (serial) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.766955] (-) TimerEvent: {}
+[4.826885] (articubot_one) CommandEnded: {'returncode': 0}
+[4.829129] (articubot_one) JobProgress: {'identifier': 'articubot_one', 'progress': 'install'}
+[4.868659] (articubot_one) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/afry/robot_ws/build/articubot_one'], 'cwd': '/home/afry/robot_ws/build/articubot_one', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/articubot_one'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.872679] (-) TimerEvent: {}
+[4.897303] (articubot_one) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.899145] (articubot_one) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.905081] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_robot.yaml\n'}
+[4.940747] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/ball_tracker_params_sim.yaml\n'}
+[4.972971] (-) TimerEvent: {}
+[4.974636] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/drive_bot.rviz\n'}
+[5.012669] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/empty.yaml\n'}
+[5.047957] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/gaz_ros2_ctl_use_sim.yaml\n'}
+[5.073327] (-) TimerEvent: {}
+[5.098573] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/gazebo_params.yaml\n'}
+[5.144602] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/joystick.yaml\n'}
+[5.166851] (serial) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.173510] (-) TimerEvent: {}
+[5.179627] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/main.rviz\n'}
+[5.215090] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/map.rviz\n'}
+[5.248159] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/mapper_params_online_async.yaml\n'}
+[5.258074] (serial) StdoutLine: {'line': b'-- Generating done\n'}
+[5.273779] (-) TimerEvent: {}
+[5.279535] (serial) StdoutLine: {'line': b'-- Build files have been written to: /home/afry/robot_ws/build/serial\n'}
+[5.280845] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/my_controllers.yaml\n'}
+[5.299352] (serial) CommandEnded: {'returncode': 0}
+[5.302144] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[5.303560] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/afry/robot_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/afry/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[5.319981] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/nav2_params.yaml\n'}
+[5.353662] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/twist_mux.yaml\n'}
+[5.374098] (-) TimerEvent: {}
+[5.387711] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/config/view_bot.rviz\n'}
+[5.423408] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/camera.xacro\n'}
+[5.463250] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/depth_camera.xacro\n'}
+[5.474474] (-) TimerEvent: {}
+[5.509482] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/face.xacro\n'}
+[5.535357] (serial) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[5.538622] (serial) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[5.545787] (serial) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o\x1b[0m\n'}
+[5.559466] (serial) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o\x1b[0m\n'}
+[5.563194] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/gazebo_control.xacro\n'}
+[5.574748] (-) TimerEvent: {}
+[5.665482] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/inertial_macros.xacro\n'}
+[5.675263] (-) TimerEvent: {}
+[5.773953] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/lidar.xacro\n'}
+[5.775997] (-) TimerEvent: {}
+[5.844136] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/robot.urdf.xacro\n'}
+[5.876346] (-) TimerEvent: {}
+[5.890139] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/robot_core.xacro\n'}
+[5.933427] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/description/ros2_control.xacro\n'}
+[5.976631] (-) TimerEvent: {}
+[5.982317] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/ball_tracker.launch.py\n'}
+[6.025489] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/camera.launch.py\n'}
+[6.066720] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/joystick.launch.py\n'}
+[6.076888] (-) TimerEvent: {}
+[6.109630] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/launch_robot.launch.py\n'}
+[6.153538] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py\n'}
+[6.177219] (-) TimerEvent: {}
+[6.236849] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/localization_launch.py\n'}
+[6.277515] (-) TimerEvent: {}
+[6.285680] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/navigation_launch.py\n'}
+[6.377806] (-) TimerEvent: {}
+[6.394002] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/online_async_launch.py\n'}
+[6.478085] (-) TimerEvent: {}
+[6.494210] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/rplidar.launch.py\n'}
+[6.578540] (-) TimerEvent: {}
+[6.616014] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/launch/rsp.launch.py\n'}
+[6.678794] (-) TimerEvent: {}
+[6.734689] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/worlds/empty.world\n'}
+[6.779107] (-) TimerEvent: {}
+[6.794649] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/worlds/obstacles.world\n'}
+[6.841935] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one\n'}
+[6.879391] (-) TimerEvent: {}
+[6.938661] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one\n'}
+[6.979903] (-) TimerEvent: {}
+[7.038759] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh\n'}
+[7.080051] (-) TimerEvent: {}
+[7.150990] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv\n'}
+[7.180321] (-) TimerEvent: {}
+[7.266266] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/path.sh\n'}
+[7.280603] (-) TimerEvent: {}
+[7.370504] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/environment/path.dsv\n'}
+[7.380840] (-) TimerEvent: {}
+[7.482199] (-) TimerEvent: {}
+[7.502385] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.bash\n'}
+[7.582446] (-) TimerEvent: {}
+[7.618956] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.sh\n'}
+[7.682808] (-) TimerEvent: {}
+[7.729177] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.zsh\n'}
+[7.783097] (-) TimerEvent: {}
+[7.838402] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/local_setup.dsv\n'}
+[7.883447] (-) TimerEvent: {}
+[7.918584] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/package.dsv\n'}
+[7.992687] (-) TimerEvent: {}
+[8.004459] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/ament_index/resource_index/packages/articubot_one\n'}
+[8.061373] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake\n'}
+[8.093032] (-) TimerEvent: {}
+[8.112221] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake\n'}
+[8.165346] (articubot_one) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/articubot_one/share/articubot_one/package.xml\n'}
+[8.193317] (-) TimerEvent: {}
+[8.243989] (articubot_one) CommandEnded: {'returncode': 0}
+[8.294547] (-) TimerEvent: {}
+[8.393270] (articubot_one) JobEnded: {'identifier': 'articubot_one', 'rc': 0}
+[8.395902] (-) TimerEvent: {}
+[8.496853] (-) TimerEvent: {}
+[8.597983] (-) TimerEvent: {}
+[8.699195] (-) TimerEvent: {}
+[8.801739] (-) TimerEvent: {}
+[8.902848] (-) TimerEvent: {}
+[9.003922] (-) TimerEvent: {}
+[9.108498] (-) TimerEvent: {}
+[9.216073] (-) TimerEvent: {}
+[9.316039] (serial) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o\x1b[0m\n'}
+[9.316964] (-) TimerEvent: {}
+[9.418111] (-) TimerEvent: {}
+[9.519223] (-) TimerEvent: {}
+[9.620447] (-) TimerEvent: {}
+[9.721538] (-) TimerEvent: {}
+[9.832064] (-) TimerEvent: {}
+[9.933485] (-) TimerEvent: {}
+[10.034696] (-) TimerEvent: {}
+[10.135877] (-) TimerEvent: {}
+[10.243417] (-) TimerEvent: {}
+[10.345086] (-) TimerEvent: {}
+[10.446882] (-) TimerEvent: {}
+[10.548585] (-) TimerEvent: {}
+[10.650269] (-) TimerEvent: {}
+[10.760268] (-) TimerEvent: {}
+[10.862261] (-) TimerEvent: {}
+[10.964180] (-) TimerEvent: {}
+[11.065726] (-) TimerEvent: {}
+[11.168224] (-) TimerEvent: {}
+[11.271210] (-) TimerEvent: {}
+[11.373366] (-) TimerEvent: {}
+[11.475135] (-) TimerEvent: {}
+[11.578722] (-) TimerEvent: {}
+[11.681508] (-) TimerEvent: {}
+[11.783040] (-) TimerEvent: {}
+[11.886374] (-) TimerEvent: {}
+[11.989360] (-) TimerEvent: {}
+[12.094811] (-) TimerEvent: {}
+[12.197124] (-) TimerEvent: {}
+[12.298679] (-) TimerEvent: {}
+[12.401770] (-) TimerEvent: {}
+[12.503952] (-) TimerEvent: {}
+[12.606407] (-) TimerEvent: {}
+[12.708632] (-) TimerEvent: {}
+[12.810481] (-) TimerEvent: {}
+[12.913150] (-) TimerEvent: {}
+[13.016194] (-) TimerEvent: {}
+[13.119231] (-) TimerEvent: {}
+[13.221966] (-) TimerEvent: {}
+[13.336143] (-) TimerEvent: {}
+[13.438916] (-) TimerEvent: {}
+[13.540226] (-) TimerEvent: {}
+[13.641230] (-) TimerEvent: {}
+[13.742205] (-) TimerEvent: {}
+[13.843070] (-) TimerEvent: {}
+[13.944193] (-) TimerEvent: {}
+[14.045524] (-) TimerEvent: {}
+[14.059578] (serial) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX static library libserial.a\x1b[0m\n'}
+[14.145749] (-) TimerEvent: {}
+[14.246628] (-) TimerEvent: {}
+[14.298236] (serial) StdoutLine: {'line': b'[ 42%] Built target serial\n'}
+[14.346983] (-) TimerEvent: {}
+[14.416422] (serial) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o\x1b[0m\n'}
+[14.447214] (-) TimerEvent: {}
+[14.548672] (-) TimerEvent: {}
+[14.656080] (-) TimerEvent: {}
+[14.757012] (-) TimerEvent: {}
+[14.858146] (-) TimerEvent: {}
+[14.959106] (-) TimerEvent: {}
+[14.968875] (serial) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[15.059369] (-) TimerEvent: {}
+[15.160536] (-) TimerEvent: {}
+[15.165278] (serial) StdoutLine: {'line': b'[ 57%] Built target gtest_main\n'}
+[15.260805] (-) TimerEvent: {}
+[15.361701] (-) TimerEvent: {}
+[15.462718] (-) TimerEvent: {}
+[15.563681] (-) TimerEvent: {}
+[15.665028] (-) TimerEvent: {}
+[15.766183] (-) TimerEvent: {}
+[15.867598] (-) TimerEvent: {}
+[15.968646] (-) TimerEvent: {}
+[16.069794] (-) TimerEvent: {}
+[16.170812] (-) TimerEvent: {}
+[16.272390] (-) TimerEvent: {}
+[16.336049] (serial) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable serial_example\x1b[0m\n'}
+[16.375964] (-) TimerEvent: {}
+[16.476929] (-) TimerEvent: {}
+[16.577953] (-) TimerEvent: {}
+[16.679152] (-) TimerEvent: {}
+[16.719480] (serial) StdoutLine: {'line': b'[ 64%] Built target serial_example\n'}
+[16.779350] (-) TimerEvent: {}
+[16.880276] (-) TimerEvent: {}
+[16.981083] (-) TimerEvent: {}
+[17.081896] (-) TimerEvent: {}
+[17.182716] (-) TimerEvent: {}
+[17.283480] (-) TimerEvent: {}
+[17.384412] (-) TimerEvent: {}
+[17.485221] (-) TimerEvent: {}
+[17.586031] (-) TimerEvent: {}
+[17.686813] (-) TimerEvent: {}
+[17.787612] (-) TimerEvent: {}
+[17.888468] (-) TimerEvent: {}
+[17.989308] (-) TimerEvent: {}
+[18.096476] (-) TimerEvent: {}
+[18.197762] (-) TimerEvent: {}
+[18.298537] (-) TimerEvent: {}
+[18.399354] (-) TimerEvent: {}
+[18.500217] (-) TimerEvent: {}
+[18.600984] (-) TimerEvent: {}
+[18.701800] (-) TimerEvent: {}
+[18.802632] (-) TimerEvent: {}
+[18.903530] (-) TimerEvent: {}
+[19.004278] (-) TimerEvent: {}
+[19.105049] (-) TimerEvent: {}
+[19.205862] (-) TimerEvent: {}
+[19.306636] (-) TimerEvent: {}
+[19.407508] (-) TimerEvent: {}
+[19.508377] (-) TimerEvent: {}
+[19.609180] (-) TimerEvent: {}
+[19.710010] (-) TimerEvent: {}
+[19.810767] (-) TimerEvent: {}
+[19.911826] (-) TimerEvent: {}
+[20.012581] (-) TimerEvent: {}
+[20.113419] (-) TimerEvent: {}
+[20.214243] (-) TimerEvent: {}
+[20.315184] (-) TimerEvent: {}
+[20.416045] (-) TimerEvent: {}
+[20.516828] (-) TimerEvent: {}
+[20.617641] (-) TimerEvent: {}
+[20.718656] (-) TimerEvent: {}
+[20.819407] (-) TimerEvent: {}
+[20.920251] (-) TimerEvent: {}
+[21.021030] (-) TimerEvent: {}
+[21.121813] (-) TimerEvent: {}
+[21.222573] (-) TimerEvent: {}
+[21.323408] (-) TimerEvent: {}
+[21.424364] (-) TimerEvent: {}
+[21.525277] (-) TimerEvent: {}
+[21.626034] (-) TimerEvent: {}
+[21.726863] (-) TimerEvent: {}
+[21.827851] (-) TimerEvent: {}
+[21.928694] (-) TimerEvent: {}
+[22.029436] (-) TimerEvent: {}
+[22.130210] (-) TimerEvent: {}
+[22.231001] (-) TimerEvent: {}
+[22.331738] (-) TimerEvent: {}
+[22.432591] (-) TimerEvent: {}
+[22.533380] (-) TimerEvent: {}
+[22.634169] (-) TimerEvent: {}
+[22.735035] (-) TimerEvent: {}
+[22.835870] (-) TimerEvent: {}
+[22.936624] (-) TimerEvent: {}
+[23.037382] (-) TimerEvent: {}
+[23.138111] (-) TimerEvent: {}
+[23.238982] (-) TimerEvent: {}
+[23.339884] (-) TimerEvent: {}
+[23.440987] (-) TimerEvent: {}
+[23.541770] (-) TimerEvent: {}
+[23.642521] (-) TimerEvent: {}
+[23.743323] (-) TimerEvent: {}
+[23.844088] (-) TimerEvent: {}
+[23.944819] (-) TimerEvent: {}
+[24.045573] (-) TimerEvent: {}
+[24.146354] (-) TimerEvent: {}
+[24.247152] (-) TimerEvent: {}
+[24.348043] (-) TimerEvent: {}
+[24.448902] (-) TimerEvent: {}
+[24.549783] (-) TimerEvent: {}
+[24.641529] (serial) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[24.650018] (-) TimerEvent: {}
+[24.750789] (-) TimerEvent: {}
+[24.852718] (-) TimerEvent: {}
+[24.953944] (-) TimerEvent: {}
+[25.019828] (serial) StdoutLine: {'line': b'[ 71%] Built target gtest\n'}
+[25.054334] (-) TimerEvent: {}
+[25.111431] (serial) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o\x1b[0m\n'}
+[25.116561] (serial) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o\x1b[0m\n'}
+[25.154577] (-) TimerEvent: {}
+[25.255680] (-) TimerEvent: {}
+[25.356612] (-) TimerEvent: {}
+[25.457473] (-) TimerEvent: {}
+[25.558361] (-) TimerEvent: {}
+[25.664006] (-) TimerEvent: {}
+[25.764956] (-) TimerEvent: {}
+[25.865992] (-) TimerEvent: {}
+[25.967133] (-) TimerEvent: {}
+[26.068772] (-) TimerEvent: {}
+[26.169784] (-) TimerEvent: {}
+[26.270704] (-) TimerEvent: {}
+[26.371650] (-) TimerEvent: {}
+[26.472707] (-) TimerEvent: {}
+[26.573856] (-) TimerEvent: {}
+[26.675337] (-) TimerEvent: {}
+[26.776402] (-) TimerEvent: {}
+[26.878659] (-) TimerEvent: {}
+[26.979756] (-) TimerEvent: {}
+[27.081643] (-) TimerEvent: {}
+[27.182556] (-) TimerEvent: {}
+[27.283528] (-) TimerEvent: {}
+[27.384484] (-) TimerEvent: {}
+[27.485422] (-) TimerEvent: {}
+[27.586838] (-) TimerEvent: {}
+[27.687902] (-) TimerEvent: {}
+[27.789479] (-) TimerEvent: {}
+[27.890430] (-) TimerEvent: {}
+[27.992045] (-) TimerEvent: {}
+[28.094128] (-) TimerEvent: {}
+[28.196121] (-) TimerEvent: {}
+[28.298063] (-) TimerEvent: {}
+[28.404158] (-) TimerEvent: {}
+[28.508215] (-) TimerEvent: {}
+[28.610122] (-) TimerEvent: {}
+[28.712024] (-) TimerEvent: {}
+[28.813817] (-) TimerEvent: {}
+[28.916154] (-) TimerEvent: {}
+[29.020254] (-) TimerEvent: {}
+[29.122038] (-) TimerEvent: {}
+[29.224424] (-) TimerEvent: {}
+[29.326436] (-) TimerEvent: {}
+[29.428340] (-) TimerEvent: {}
+[29.531318] (-) TimerEvent: {}
+[29.633161] (-) TimerEvent: {}
+[29.735107] (-) TimerEvent: {}
+[29.837140] (-) TimerEvent: {}
+[29.939364] (-) TimerEvent: {}
+[30.046544] (-) TimerEvent: {}
+[30.148674] (-) TimerEvent: {}
+[30.250513] (-) TimerEvent: {}
+[30.352600] (-) TimerEvent: {}
+[30.453832] (-) TimerEvent: {}
+[30.555063] (-) TimerEvent: {}
+[30.656633] (-) TimerEvent: {}
+[30.759935] (-) TimerEvent: {}
+[30.860935] (-) TimerEvent: {}
+[30.961977] (-) TimerEvent: {}
+[31.062923] (-) TimerEvent: {}
+[31.164167] (-) TimerEvent: {}
+[31.265359] (-) TimerEvent: {}
+[31.366551] (-) TimerEvent: {}
+[31.467564] (-) TimerEvent: {}
+[31.568679] (-) TimerEvent: {}
+[31.654975] (serial) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/boost/bind.hpp:30\x1b[m\x1b[K,\n'}
+[31.655946] (serial) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/afry/robot_ws/src/serial/tests/unix_serial_tests.cc:23\x1b[m\x1b[K:\n'}
+[31.656601] (serial) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/boost/bind.hpp:36:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.\x1b[m\x1b[K\xe2\x80\x99\n'}
+[31.657274] (serial) StderrLine: {'line': b'   36 | \x1b[01;36m\x1b[KBOOST_PRAGMA_MESSAGE\x1b[m\x1b[K(\n'}
+[31.657808] (serial) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[31.668898] (-) TimerEvent: {}
+[31.769990] (-) TimerEvent: {}
+[31.870900] (-) TimerEvent: {}
+[31.971880] (-) TimerEvent: {}
+[32.053932] (serial) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable serial-test-timer\x1b[0m\n'}
+[32.072129] (-) TimerEvent: {}
+[32.173322] (-) TimerEvent: {}
+[32.274426] (-) TimerEvent: {}
+[32.376472] (-) TimerEvent: {}
+[32.477653] (-) TimerEvent: {}
+[32.578632] (-) TimerEvent: {}
+[32.679471] (-) TimerEvent: {}
+[32.682776] (serial) StdoutLine: {'line': b'[ 92%] Built target serial-test-timer\n'}
+[32.760656] (serial) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable serial-test\x1b[0m\n'}
+[32.779687] (-) TimerEvent: {}
+[32.881059] (-) TimerEvent: {}
+[32.982015] (-) TimerEvent: {}
+[33.082962] (-) TimerEvent: {}
+[33.183988] (-) TimerEvent: {}
+[33.284942] (-) TimerEvent: {}
+[33.355289] (serial) StdoutLine: {'line': b'[100%] Built target serial-test\n'}
+[33.385139] (-) TimerEvent: {}
+[33.395265] (serial) CommandEnded: {'returncode': 0}
+[33.397753] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[33.401685] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/afry/robot_ws/build/serial'], 'cwd': '/home/afry/robot_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/serial'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[33.437908] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[33.440069] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[33.441738] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/lib/libserial.a\n'}
+[33.473715] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/include/serial/serial.h\n'}
+[33.485338] (-) TimerEvent: {}
+[33.507027] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/include/serial/v8stdint.h\n'}
+[33.549967] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[33.584180] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[33.585461] (-) TimerEvent: {}
+[33.621356] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[33.654867] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[33.685721] (-) TimerEvent: {}
+[33.688482] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[33.722224] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[33.754722] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/environment/path.sh\n'}
+[33.785952] (-) TimerEvent: {}
+[33.787684] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/environment/path.dsv\n'}
+[33.821459] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/local_setup.bash\n'}
+[33.854653] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/local_setup.sh\n'}
+[33.886154] (-) TimerEvent: {}
+[33.887726] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/local_setup.zsh\n'}
+[33.921350] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/local_setup.dsv\n'}
+[33.953969] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/package.dsv\n'}
+[33.986336] (-) TimerEvent: {}
+[33.987180] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[34.021763] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[34.058285] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[34.086554] (-) TimerEvent: {}
+[34.090279] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[34.126617] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[34.161066] (serial) StdoutLine: {'line': b'-- Symlinking: /home/afry/robot_ws/install/serial/share/serial/package.xml\n'}
+[34.186770] (-) TimerEvent: {}
+[34.200243] (serial) CommandEnded: {'returncode': 0}
+[34.287340] (-) TimerEvent: {}
+[34.290087] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[34.294760] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[34.328773] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[34.330643] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '/home/afry/robot_ws/src/diffdrive_arduino', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/diffdrive_arduino'], 'cwd': '/home/afry/robot_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'afry'), ('LC_TIME', 'bn_BD'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/afry/robot_ws/install/serial/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/afry'), ('OLDPWD', '/home/afry'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'bn_BD'), ('SYSTEMD_EXEC_PID', '1212'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'afry'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'afry'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/afry-desktop:@/tmp/.ICE-unix/1173,unix/afry-desktop:/tmp/.ICE-unix/1173'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'bn_BD'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ccaf0e4_bad8_47b3_b1dc_ede144f44e5f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'bn_BD'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.O1P592'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/afry/robot_ws/install/serial:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'bn_BD'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'bn_BD'), ('LC_IDENTIFICATION', 'bn_BD'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/afry/robot_ws/build/diffdrive_arduino'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'bn_BD'), ('LC_PAPER', 'bn_BD'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/afry/robot_ws/install/serial:/opt/ros/humble')]), 'shell': False}
+[34.387678] (-) TimerEvent: {}
+[34.488576] (-) TimerEvent: {}
+[34.589232] (-) TimerEvent: {}
+[34.609738] (diffdrive_arduino) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[34.689453] (-) TimerEvent: {}
+[34.790290] (-) TimerEvent: {}
+[34.889451] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[34.890390] (-) TimerEvent: {}
+[34.921459] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[34.990709] (-) TimerEvent: {}
+[35.091508] (-) TimerEvent: {}
+[35.192408] (-) TimerEvent: {}
+[35.258954] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[35.284648] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[35.285411] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[35.286861] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[35.292567] (-) TimerEvent: {}
+[35.298679] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[35.392774] (-) TimerEvent: {}
+[35.493674] (-) TimerEvent: {}
+[35.595093] (-) TimerEvent: {}
+[35.696493] (-) TimerEvent: {}
+[35.797921] (-) TimerEvent: {}
+[35.899183] (-) TimerEvent: {}
+[36.000072] (-) TimerEvent: {}
+[36.031014] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[36.061849] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[36.062700] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[36.064436] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[36.090318] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[36.100182] (-) TimerEvent: {}
+[36.200776] (-) TimerEvent: {}
+[36.301720] (-) TimerEvent: {}
+[36.402648] (-) TimerEvent: {}
+[36.503537] (-) TimerEvent: {}
+[36.604601] (-) TimerEvent: {}
+[36.705590] (-) TimerEvent: {}
+[36.806724] (-) TimerEvent: {}
+[36.857359] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[36.906928] (-) TimerEvent: {}
+[37.007613] (-) TimerEvent: {}
+[37.108367] (-) TimerEvent: {}
+[37.160966] (diffdrive_arduino) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[37.208576] (-) TimerEvent: {}
+[37.309355] (-) TimerEvent: {}
+[37.410109] (-) TimerEvent: {}
+[37.415276] (diffdrive_arduino) StdoutLine: {'line': b'-- Found serial: 1.2.1 (/home/afry/robot_ws/install/serial/share/serial/cmake)\n'}
+[37.510313] (-) TimerEvent: {}
+[37.586644] (diffdrive_arduino) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:16 (find_package):\n'}
+[37.587508] (diffdrive_arduino) StderrLine: {'line': b'  By not providing "Findhardware_interface.cmake" in CMAKE_MODULE_PATH this\n'}
+[37.587969] (diffdrive_arduino) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[37.588312] (diffdrive_arduino) StderrLine: {'line': b'  "hardware_interface", but CMake did not find one.\n'}
+[37.588589] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[37.588874] (diffdrive_arduino) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[37.589165] (diffdrive_arduino) StderrLine: {'line': b'  "hardware_interface" with any of the following names:\n'}
+[37.589458] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[37.589742] (diffdrive_arduino) StderrLine: {'line': b'    hardware_interfaceConfig.cmake\n'}
+[37.590042] (diffdrive_arduino) StderrLine: {'line': b'    hardware_interface-config.cmake\n'}
+[37.590452] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[37.590978] (diffdrive_arduino) StderrLine: {'line': b'  Add the installation prefix of "hardware_interface" to CMAKE_PREFIX_PATH or\n'}
+[37.591520] (diffdrive_arduino) StderrLine: {'line': b'  set "hardware_interface_DIR" to a directory containing one of the above\n'}
+[37.592538] (diffdrive_arduino) StderrLine: {'line': b'  files.  If "hardware_interface" provides a separate development package or\n'}
+[37.593897] (diffdrive_arduino) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[37.594755] (diffdrive_arduino) StderrLine: {'line': b'\n'}
+[37.595359] (diffdrive_arduino) StderrLine: {'line': b'\x1b[0m\n'}
+[37.600740] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[37.604259] (diffdrive_arduino) StdoutLine: {'line': b'See also "/home/afry/robot_ws/build/diffdrive_arduino/CMakeFiles/CMakeOutput.log".\n'}
+[37.608338] (diffdrive_arduino) CommandEnded: {'returncode': 1}
+[37.610612] (-) TimerEvent: {}
+[37.673110] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 1}
+[37.684974] (-) EventReactorShutdown: {}

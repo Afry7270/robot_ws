@@ -1,0 +1,1 @@
+Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/afry/robot_ws/build/articubot_one -- -j4 -l4

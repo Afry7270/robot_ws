@@ -1,0 +1,7 @@
+[0.104s] Invoking command in '/home/afry/robot_ws/build/serial': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/afry/robot_ws/build/serial -- -j4 -l4
+[0.361s] [ 14%] Built target gtest_main
+[0.363s] [ 42%] Built target serial
+[0.372s] [ 57%] Built target gtest
+[0.471s] [ 71%] Built target serial_example
+[0.481s] [ 85%] Built target serial-test-timer
+[0.486s] [100%] Built target serial-test

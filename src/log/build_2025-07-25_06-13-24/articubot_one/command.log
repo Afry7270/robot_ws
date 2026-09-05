@@ -1,0 +1,2 @@
+Invoking command in '/home/afry/robot_ws/src/build/articubot_one': /usr/bin/cmake /home/afry/robot_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/src/install/articubot_one
+Invoked command in '/home/afry/robot_ws/src/build/articubot_one' returned '1': /usr/bin/cmake /home/afry/robot_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/src/install/articubot_one

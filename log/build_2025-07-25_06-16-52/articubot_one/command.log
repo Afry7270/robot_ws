@@ -1,0 +1,6 @@
+Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/afry/robot_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/articubot_one
+Invoked command in '/home/afry/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/afry/robot_ws/src/articubot_one -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/afry/robot_ws/install/articubot_one
+Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/afry/robot_ws/build/articubot_one -- -j4 -l4
+Invoked command in '/home/afry/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/afry/robot_ws/build/articubot_one -- -j4 -l4
+Invoking command in '/home/afry/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/afry/robot_ws/build/articubot_one
+Invoked command in '/home/afry/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/afry/robot_ws/build/articubot_one

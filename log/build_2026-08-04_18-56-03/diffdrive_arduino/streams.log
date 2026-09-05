@@ -1,0 +1,64 @@
+[0.054s] Invoking command in '/home/afry/robot_ws/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/afry/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/afry/robot_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/afry/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/afry/robot_ws/build/diffdrive_arduino -- -j4 -l4
+[0.152s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.697s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.733s] -- Found serial: 1.2.1 (/home/afry/robot_ws/install/serial/share/serial/cmake)
+[0.740s] -- Found hardware_interface: 2.54.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.111s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.128s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.168s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.226s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.296s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.385s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.397s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.516s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.561s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.651s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.684s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[2.720s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.970s] -- Found controller_manager: 2.54.0 (/opt/ros/humble/share/controller_manager/cmake)
+[3.462s] -- Configuring done
+[3.578s] -- Generating done
+[3.610s] -- Build files have been written to: /home/afry/robot_ws/build/diffdrive_arduino
+[3.729s] [35m[1mConsolidate compiler generated dependencies of target fake_robot[0m
+[3.731s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[3.898s] [ 14%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o[0m
+[3.898s] [ 28%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o[0m
+[3.908s] [ 42%] [32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o[0m
+[3.918s] [ 57%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o[0m
+[5.845s] [ 71%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o[0m
+[22.631s] [ 85%] [32m[1mLinking CXX shared library libfake_robot.so[0m
+[22.900s] [100%] [32m[1mLinking CXX shared library libdiffdrive_arduino.so[0m
+[23.725s] [100%] Built target fake_robot
+[23.935s] [100%] Built target diffdrive_arduino
+[23.976s] Invoked command in '/home/afry/robot_ws/build/diffdrive_arduino' returned '0': AMENT_PREFIX_PATH=/home/afry/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/afry/robot_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/afry/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/afry/robot_ws/build/diffdrive_arduino -- -j4 -l4
+[23.985s] Invoking command in '/home/afry/robot_ws/build/diffdrive_arduino': AMENT_PREFIX_PATH=/home/afry/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/afry/robot_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/afry/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/afry/robot_ws/build/diffdrive_arduino
+[24.014s] -- Install configuration: ""
+[24.016s] -- Execute custom install script
+[24.017s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml
+[24.018s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml
+[24.020s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so
+[24.021s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/lib/libfake_robot.so
+[24.022s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml
+[24.024s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py
+[24.025s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py
+[24.026s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh
+[24.027s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv
+[24.028s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino
+[24.029s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino
+[24.030s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh
+[24.031s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv
+[24.032s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh
+[24.033s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv
+[24.034s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash
+[24.035s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh
+[24.036s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh
+[24.037s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv
+[24.037s] -- Symlinking: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv
+[24.071s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino
+[24.072s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino
+[24.073s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake
+[24.074s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.075s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake
+[24.075s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake
+[24.076s] -- Up-to-date symlink: /home/afry/robot_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml
+[24.085s] Invoked command in '/home/afry/robot_ws/build/diffdrive_arduino' returned '0': AMENT_PREFIX_PATH=/home/afry/robot_ws/install/serial:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/afry/robot_ws/install/serial:/opt/ros/humble LD_LIBRARY_PATH=/home/afry/robot_ws/install/serial/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/afry/robot_ws/build/diffdrive_arduino
