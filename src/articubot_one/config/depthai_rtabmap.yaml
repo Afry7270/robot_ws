@@ -1,0 +1,27 @@
+/oak:
+  ros__parameters:
+
+    driver:
+      i_enable_ir: true
+      i_publish_tf_from_calibration: true
+      i_tf_parent_frame: base_link
+
+    pipeline_gen:
+      i_pipeline_type: rgbd
+      i_enable_rgbd: true
+      i_enable_vio: false
+      i_nn_type: none
+
+    rgb:
+      i_fps: 30.0
+      i_synced: true
+
+    stereo:
+      i_fps: 30.0
+      i_synced: true
+      i_depth_preset: DEFAULT
+
+    rgbd:
+      i_publish_topic: true
+      i_run_align_on_host: true
+      i_run_sync_on_host: true
